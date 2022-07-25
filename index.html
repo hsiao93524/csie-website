@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>歡迎進入南大資工104及專題網站</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type="text/javascript" src="js/javascript.js">
+		</script>
+	</head>
+	<body onload="findDimensions()" id="b2">
+		<header>			
+		</header>
+		<div id="content">
+			<div id="lhand">
+				<table>
+					<tr class="table_cell"><td></td></tr>
+					<tr class="table_cell"><td><a href="index.html"><img class="buttom" src="img\首頁.png" border="0" title="首頁"></a></td></tr>
+					<tr class="table_cell"><td></td></tr>
+					<tr class="table_cell"><td><a href="projects.html"><img class="buttom" src="img\專題題目.png" border="0" title="專題題目"></a></td></tr>
+					<tr class="table_cell"><td></td></tr>
+					<tr class="table_cell"><td><a href="program.html"><img class="buttom" src="img\活動流程.png" border="0" title="活動流程"></a></td></tr>
+					<tr class="table_cell"><td></td></tr>
+					<tr class="table_cell"><td><a href="contact.html"><img class="buttom" src="img\交通資訊.png" border="0" title="交通資訊"></a></td></tr>
+					<tr class="table_cell"><td></td></tr> 
+				</table>				
+			</div>
+			<div id="rhand">
+				<div id="inner">
+					<div id="container">
+						<div class="indexcontainer">
+							<p id="photodisplay"></p>
+						</div>
+						<div class="indexcontainer">
+							<p style="text-align:center;color:000"><span style="font-size:25px;font-family:標楷體;">今年的展覽由104級學生舉辦，共有18組同學參加展覽，
+							題目範圍廣泛，包含影像處理應用、智慧型裝置系統開發、嵌入式系統實作等等，在展覽中104級學生們的用心、創意、專業的態度，
+							更可看出學生們一年來研究的成果，四年來的學習成效。</span></p>
+							<br><br><br>
+							<p style="text-align:center;color:000"><span style="font-size:35px;font-family:標楷體;">
+								活動日期: 2014 / 12 / 20 （六）<br>
+								活動時間: 上午11點 ~ 下午4點<br>
+								活動地點: 台南大學文薈樓地下一樓
+							</span></p>
+							<p style="text-align:center;color:000"><span style="font-size:25px;font-family:標楷體;">
+								<br>
+									當天還會有精美禮品喔！別再猶豫！快來參加吧！
+							</span></p>
+						</div>
+						</div>
+				</div>				
+			</div>			
+		</div>		
+	</body>
+	<script type="text/javascript">
+		var jsImg = new Array("img/pic/1.jpg","img/pic/2.jpg","img/pic/3.jpg");
+		randomImg();
+		//設定每兩秒執行一次randomImg() ，此行要在 function 之外
+		setInterval("randomImg()",5000);
+		function randomImg(){
+			//陣列的長度 * 介於0~1間數字 ，然後在取 floor 當照片索引值
+			var imgIndex = Math.floor(Math.random()*jsImg.length);
+			document.getElementById("photodisplay").innerHTML  = "<img src='"+jsImg[imgIndex]+"' width=400 height=300>";
+		}
+	</script>
+	<footer>
+	</footer>
+	
+</html>

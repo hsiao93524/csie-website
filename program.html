@@ -1,0 +1,135 @@
+<!--BUG:
+	winHeight發散
+	網頁一讀取無法準確抓到視窗大小	
+-->
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>歡迎進入南大資工104及專題網站</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type="text/javascript" src="js/javascript.js"></script>
+	</head>
+	<body onload="findDimensions()" id="b2">
+		<header>
+		</header>
+		<div id="content">
+			<div id="lhand">
+				<table>
+					<tr class="table_cell"><td></td></tr>
+					<tr class="table_cell"><td><a href="index.html"><img class="buttom" src="img\首頁.png" border="0" title="首頁"></a></td></tr>
+					<tr class="table_cell"><td></td></tr>
+					<tr class="table_cell"><td><a href="projects.html"><img class="buttom" src="img\專題題目.png" border="0" title="專題題目"></a></td></tr>
+					<tr class="table_cell"><td></td></tr>
+					<tr class="table_cell"><td><a href="program.html"><img class="buttom" src="img\活動流程.png" border="0" title="活動流程"></a></td></tr>
+					<tr class="table_cell"><td></td></tr>
+					<tr class="table_cell"><td><a href="contact.html"><img class="buttom" src="img\交通資訊.png" border="0" title="交通資訊"></a></td></tr>
+					<tr class="table_cell"><td></td></tr> 
+				</table>				
+			</div>
+			<div id="rhand">
+				<div id="inner">
+					<div id="container">
+						<p id="text" style="text-align:center;color:000"><span style="font-size:35px;font-family:標楷體;">
+						活動流程
+						</span></p>
+						<table class="process" align="center" rules="all"cellpadding="5">
+							<caption>12/17 (三) 報告流程</caption>
+							<tr>
+								<td>時間</td>			<td>內容</td>
+							</tr>
+							<tr>
+								<td>13:10 ~ 13:30</td>	<td>開幕式</td>
+							</tr>
+							<tr>
+								<td>13:30 ~ 17:16</td>	<td>各組報告時間</td>
+							</tr>
+							<tr>
+								<td>17:16 ~ </td>		<td>閉幕式</td>
+							</tr>
+						</table>
+						<p></p>
+						<table class="process" align="center" rules="all" cellpadding="5">
+							<caption>12/17 (三) 各組報告順序</caption>
+							<tr>
+								<td>時間</td>			<td>題目</td>																<td>指導教授</td>	<td>組員</td>
+							</tr>
+							<tr>
+								<td>13:30 ~ 13:42</td>	<td>植基於頭部轉動判斷之駕駛瞌睡偵測系統</td>								<td>李建樹</td>		<td>彭思倩 / 廖禹棠</td>
+							</tr>
+							<tr>
+								<td>13:42 ~ 13:54</td>	<td>線上適性評量測驗系統</td>		 										<td>李建興</td>		<td>蔡元勳 / 黃尉庭</td>
+							</tr>
+							<tr>
+								<td>13:54 ~ 14:06</td>	<td>具視覺化操作介面次世代定序基因表現估測平台建置</td>					<td>陳榮銘</td>		<td>吳栢翰 / 許佑熙</td>
+							</tr>
+							<tr>
+								<td>14:06 ~ 14:18</td>	<td>無線區域網路 WiFi 基地台連結拓樸自動化建構與管理之研製</td>			<td>陳宗禧</td>		<td>李育縉 / 陳揮揚</td>
+							</tr>
+							<tr>
+								<td>14:18 ~ 14:30</td>	<td>具環境適應性之語音撥號手機用軟體設計</td>								<td>陳榮銘</td>		<td>王奕淳 / 陳權佑 / 吳孟蓁</td>
+							</tr>
+							<tr>
+								<td>14:30 ~ 14:42</td>	<td>智慧型影像景點辨識標記系統之研製</td>									<td>錢炳全</td>		<td>施華桐 / 傅章賢</td>
+							</tr>
+							<tr>
+								<td>14:42 ~ 14:54</td>	<td>印刷局部 UV 上光自動檢測系統</td>		 								<td>李建樹</td>		<td>陳以撒</td>
+							</tr>
+							<tr>
+								<td>14:54 ~ 15:06</td>	<td>NFC火車時刻表＆點餐及管理系統</td>		 								<td>楊文霖</td>		<td>李保頡 / 黃偉哲</td>
+							</tr>
+							<tr>
+								<td>15:06 ~ 15:18</td>	<td>以多感測器為基礎之行動機人入塢系統</td>								<td>朱明毅</td>		<td>沈志翰 / 許頌頤</td>
+							</tr>
+							<tr>
+								<td>15:18 ~ 15:28</td>	<td colspan="3">中場休息</td>
+							</tr>
+							<tr>
+								<td>15:28 ~ 15:40</td>	<td>植基於 PPG 技術之手持非接觸式心跳速率量測系統</td>					<td>李建樹</td>		<td>林冠瑋 / 薛佳綾</td>
+							</tr>
+							<tr>
+								<td>15:40 ~ 15:52</td>	<td>智慧型手機路平檢驗監控系統</td>										<td>林朝興</td>		<td>魏志任</td>
+							</tr>
+							<tr>
+								<td>15:52 ~ 16:04</td>	<td>採用緊急性感知片段選擇之 BitTorrent 協定提供同儕式影音串流服務</td>	<td>林朝興</td>		<td>吳健民 / 蕭銘麒 / 鄭宇翔</td>
+							</tr>
+							<tr>
+								<td>16:04 ~ 16:16</td>	<td>台南市垃圾車清運點 APP</td>											<td>李建樹</td>		<td>黃建彰 / 沈佩蓁</td>
+							</tr>
+							<tr>
+								<td>16:16 ~ 16:28</td>	<td>視覺導引行動機器人入塢系統</td>										<td>朱明毅</td>		<td>施冠廷 / 巫振輝</td>
+							</tr>
+							<tr>
+								<td>16:28 ~ 16:40</td>	<td>機器手臂視覺伺服定位研究</td>											<td>朱明毅</td>		<td>許景皓 / 陳俊仁</td>
+							</tr>
+							<tr>
+								<td>16:40 ~ 16:52</td>	<td>利用 Openflow 技術無線區域網路 WiFi 基地台省電機制之研製</td>		 	<td>陳宗禧</td>		<td>黃昱翔 / 李舜泰</td>
+							</tr>
+							<tr>
+								<td>16:52 ~ 17:04</td>	<td>於行動應用程式開發之都市區噪音地圖繪製工具</td>						<td>林朝興</td>		<td>黃濬文</td>
+							</tr>
+							<tr>
+								<td>17:04 ~ 17:16</td>	<td>個人旅遊規劃與日誌系統之互動式網頁</td>		 						<td>楊文霖</td>		<td>呂旺芃 / 林美秀</td>
+							</tr>
+						</table>
+						<p></p>
+						<table class="process" align="center" rules="all">
+							<caption>12/20 (六) 展覽流程</caption>
+							<tr>
+								<td>時間</td>			<td>內容</td>
+							</tr>
+							<tr>
+								<td>11:00 ~ 16:30</td>	<td>專題展覽</td>
+							</tr>
+							<tr>
+								<td>16:30 ~ </td>		<td>閉幕式</td>
+							</tr>
+						</table>
+					</div>
+				</div>				
+			</div>			
+		</div>		
+	</body>	
+	<footer>
+	</footer>	
+</html>
